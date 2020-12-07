@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+    <h1 id="title">A Quick Survey</h1>
+    <p id="description">Its a survey to know more about the younger generation and where they standing in the society </p>
+    </div>
+    <!-- Form starts here -->
+    <form id="survey-form" action="" method="POST">
+        <fieldset required>
+            <legend>Personal Information</legend>
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Full Name">
+            <br> <br>
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" placeholder="eg. xyz12@gmail.com">
+            <br><br>
+        <label for="number" id="number-label">Age</label>
+        <input id="number" type="number" min="0" max="100" placeholder="eg. 25">
+        <br><br>
+        <div id="dropdown">
+            <label for="gender">Gender</label>
+            <select name="gender" >
+                <option value="select">-select-</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            
+            <input type="radio" name="edu" >
+            <label for="edu">10 <sup>th</sup> Pass</label>
+
+            <input type="radio" name="edu" >
+            <label for="edu">12 <sup>th</sup> Pass</label>
+
+            <input type="radio" name="edu" >
+            <label for="edu">
+                Under-Graduate
+            </label>
+
+            <input type="radio" name="edu" >
+            <label for="edu">Post-Graduate</label>
+        </fieldset>
+
+        <div class="cont">
+        <p>Fields that you are currently in or intrested</p>
+        <small>(Check all that apply)</small>
+        </div>
+        <br>
+        <div class="flex">
+        <input type="checkbox" name="color" id="">MBBS<br>
+     <input type="checkbox" name="color" id="">BSc<br>
+     <input type="checkbox" name="color" id="">BE<br>
+     <input type="checkbox" name="color" id="">B.Arch<br>
+     <input type="checkbox" name="color" id="">BA<br>
+     <input type="checkbox" name="color" id="">Hotel Management<br>
+        </div>
+
+
+        <br>
+        <div class="comments">
+        <label for="message">Message</label><br>
+        <textarea type="text" name="message"></textarea>
+        </div>
+        <br><br>
+
+            <input id="submit" type="submit">
+    </form>
+    </div>
+</body>
+</html>
